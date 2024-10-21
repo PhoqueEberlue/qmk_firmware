@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
         MO(1)   ,A_SCLN  ,A_q     ,KC_J    ,KC_K    ,KC_X    ,                     KC_B    ,A_m     ,A_w     ,KC_V    ,A_z     ,MO(1)   ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-        KC_LCTL ,KC_LALT ,XXXXXXX ,KC_LGUI ,KC_SPC  ,KC_DEL  ,                     KC_ENT  ,KC_BSPC ,KC_LGUI ,XXXXXXX ,KC_RALT ,KC_RCTL ,
+        KC_LCTL ,KC_LALT ,KC_LSFT ,KC_LGUI ,KC_SPC  ,KC_DEL  ,                     KC_ENT  ,KC_BSPC ,KC_LGUI ,KC_RSFT ,KC_RALT ,KC_RCTL ,
     // └────────┴────────┴────────┴────────┼────────┼────────┤                    ├────────┼────────┼────────┴────────┴────────┴────────┘
                                             MO(2)   ,TG(5)   ,                     MO(3)   ,MO(4)
     //                                     └────────┴────────┘                    └────────┴────────┘
@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
         _______ ,A_CLN,   A_Q,     A_J,     A_K,     A_X,                          A_B,     A_M,     A_W,     A_V,     A_Z,     _______ ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-        KC_LCTL, KC_LALT, XXXXXXX, KC_LGUI, KC_SPC,  KC_DEL,                       KC_ENT,  KC_BSPC, KC_LGUI, XXXXXXX, KC_RALT, KC_RCTL,
+        KC_LCTL, KC_LALT, KC_LSFT, KC_LGUI, KC_SPC,  KC_DEL,                       KC_ENT,  KC_BSPC, KC_LGUI, KC_RSFT, KC_RALT, KC_RCTL,
     // └────────┴────────┴────────┴────────┼────────┼────────┤                    ├────────┼────────┼────────┴────────┴────────┴────────┘
                                             MO(2),   TG(5),                        MO(3),   MO(4)
     //                                     └────────┴────────┘                    └────────┴────────┘
