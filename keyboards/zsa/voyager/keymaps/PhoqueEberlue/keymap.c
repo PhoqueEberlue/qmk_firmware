@@ -28,22 +28,7 @@
 #define DIAE LSFT(CIRC)  // ¨
 //
 
-// Shifted numrow
-//numbers
-#define EXLM LSFT(KC_EXLM)
-#define AT   LSFT(KC_AT)
-#define HASH LSFT(KC_HASH)
-#define DLR  LSFT(KC_DLR)
-#define PERC LSFT(KC_PERC)
-#define CIRC LSFT(KC_CIRC)
-#define AMPR LSFT(KC_AMPR)
-#define ASTR LSFT(KC_ASTR)
-#define LPRN LSFT(KC_LPRN)
-#define RPRN LSFT(KC_RPRN)
-#define BSLS LSFT(KC_BSLS)
-
-#define TILD  LSFT(KC_GRV)
-
+// Dvorak remaps
 #define LBRC KC_MINS
 #define RBRC KC_EQL
 #define LCBR LSFT(KC_MINS)
@@ -52,7 +37,7 @@
 #define EQL  KC_RBRC
 
 // Mod taps
-// Naming: <key when tap>_<key_when_hold>
+// Naming: <key when tap>_<key when hold>
 #define SPC_GUI  MT(MOD_LGUI, KC_SPC)
 #define DEL_ALT  MT(MOD_LALT, KC_DEL)
 #define ENT_SFT  MT(MOD_LSFT, KC_ENT)
@@ -75,9 +60,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Numeric, symbols and FN
     [1] = LAYOUT(
     // ┌────────┬────────┬────────┬────────┬────────┬────────┐                    ┌────────┬────────┬────────┬────────┬────────┬────────┐
-        KC_GRV  ,EXLM    ,AT      ,HASH    ,DLR     ,PERC    ,                     CIRC    ,AMPR    ,ASTR    ,LPRN    ,RPRN    ,BSLS    ,
+        KC_GRV  ,KC_EXLM ,KC_AT   ,KC_HASH ,KC_DLR  ,KC_PERC ,                     KC_CIRC ,KC_AMPR ,KC_ASTR ,KC_LPRN ,KC_RPRN ,KC_BSLS ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-        TILD    ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                     KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_BSLS ,
+        KC_TILD ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,                     KC_6    ,KC_7    ,KC_8    ,KC_9    ,KC_0    ,KC_BSLS ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        PLUS    ,LBRC    ,LCBR    ,RCBR    ,RBRC    ,EQL     ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
