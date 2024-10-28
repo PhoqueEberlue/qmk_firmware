@@ -41,8 +41,8 @@
 // Naming: <key when tap>_<key when hold>
 #define SPC_GUI  MT(MOD_LGUI, KC_SPC)
 #define DEL_ALT  MT(MOD_LALT, KC_DEL)
-#define ENT_SFT  MT(MOD_LSFT, KC_ENT)
-#define BSPC_CTL MT(MOD_LCTL, KC_BSPC)
+#define ENT_CTL  MT(MOD_LCTL, KC_ENT)
+#define BSPC_SFT MT(MOD_LSFT, KC_BSPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
         XXXXXXX ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                     KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,XXXXXXX ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-        KC_BTN1 ,KC_WH_D ,KC_WH_U ,KC_BTN2 ,SPC_GUI ,DEL_ALT ,                     ENT_SFT ,BSPC_CTL,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,
+        KC_BTN1 ,KC_WH_D ,KC_WH_U ,KC_BTN2 ,SPC_GUI ,DEL_ALT ,                     ENT_CTL ,BSPC_SFT,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,
     // └────────┴────────┴────────┴────────┼────────┼────────┤                    ├────────┼────────┼────────┴────────┴────────┴────────┘
                                             MO(1)   ,TG(4)   ,                     MO(2)   ,MO(3)
     //                                     └────────┴────────┘                    └────────┴────────┘
