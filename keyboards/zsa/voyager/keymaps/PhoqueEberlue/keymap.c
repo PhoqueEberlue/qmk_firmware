@@ -44,6 +44,13 @@
 #define ENT_CTL  MT(MOD_LCTL, KC_ENT)
 #define BSPC_SFT MT(MOD_LSFT, KC_BSPC)
 
+// Combos
+const uint16_t PROGMEM altgr_combo[] = {SPC_GUI, DEL_ALT, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(altgr_combo, KC_ALGR),
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
     // ┌────────┬────────┬────────┬────────┬────────┬────────┐                    ┌────────┬────────┬────────┬────────┬────────┬────────┐
