@@ -47,8 +47,23 @@
 // Combos
 const uint16_t PROGMEM altgr_combo[] = {SPC_GUI, DEL_ALT, COMBO_END};
 
+// Combo for keys on the right edge of the left part
+const uint16_t PROGMEM t_combo[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM g_combo[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM b_combo[] = {KC_C, KC_V, COMBO_END};
+
+const uint16_t PROGMEM y_combo[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM h_combo[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM n_combo[] = {KC_M, KC_COMM, COMBO_END};
+
 combo_t key_combos[] = {
     COMBO(altgr_combo, KC_ALGR),
+    COMBO(t_combo, KC_T),
+    COMBO(g_combo, KC_G),
+    COMBO(b_combo, KC_B),
+    COMBO(y_combo, KC_Y),
+    COMBO(h_combo, KC_H),
+    COMBO(n_combo, KC_N),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -60,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
         DM_REC1 ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,                     KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,DM_PLY1 ,
     // ├────────┼────────┼────────┼────────┼────────┼────────┤                    ├────────┼────────┼────────┼────────┼────────┼────────┤
-        KC_BTN1 ,KC_WH_D ,KC_WH_U ,KC_BTN2 ,SPC_GUI ,DEL_ALT ,                     ENT_CTL ,BSPC_SFT,KC_MS_L ,KC_MS_D ,KC_MS_U ,KC_MS_R ,
+        _______ ,_______ ,_______ ,_______ ,SPC_GUI ,DEL_ALT ,                     ENT_CTL ,BSPC_SFT,_______ ,_______ ,_______ ,_______ ,
     // └────────┴────────┴────────┴────────┼────────┼────────┤                    ├────────┼────────┼────────┴────────┴────────┴────────┘
                                             MO(1)   ,TG(3)   ,                     RGB_TOG ,MO(2)
     //                                     └────────┴────────┘                    └────────┴────────┘
@@ -108,3 +123,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                                     └────────┴────────┘                    └────────┴────────┘
     ),
 };
+
