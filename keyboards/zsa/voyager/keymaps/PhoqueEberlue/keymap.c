@@ -58,12 +58,14 @@ const uint16_t PROGMEM n_combo[] = {KC_M, KC_COMM, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(altgr_combo, KC_ALGR),
+    /*
     COMBO(t_combo, KC_T),
     COMBO(g_combo, KC_G),
     COMBO(b_combo, KC_B),
     COMBO(y_combo, KC_Y),
     COMBO(h_combo, KC_H),
     COMBO(n_combo, KC_N),
+    */
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
