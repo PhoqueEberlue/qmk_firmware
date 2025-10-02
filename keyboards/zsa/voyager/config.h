@@ -29,13 +29,17 @@
 #define MOUSE_EXTENDED_REPORT
 
 // CPI stands for C(?) Per Inch? So it's the sensivity basically
-#define NAVIGATOR_TRACKBALL_CPI 20
-#define NAVIGATOR_SCROLL_DIVIDER 100
+#define NAVIGATOR_TRACKBALL_CPI 15
+#define NAVIGATOR_SCROLL_DIVIDER 15
+
+// Feels more natural to me
+#define NAVIGATOR_SCROLL_INVERT_X
+#define NAVIGATOR_SCROLL_INVERT_Y
 
 // Automatically enables layers 4 upon using the trackball
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
 // Auto deactivate layers 4 after AUTO_MOUSE_TIME ms
-#define AUTO_MOUSE_TIME 150
+#define AUTO_MOUSE_TIME 450
 #define AUTO_MOUSE_THRESHOLD 1
 #define AUTO_MOUSE_SCROLL_THRESHOLD AUTO_MOUSE_THRESHOLD / NAVIGATOR_SCROLL_DIVIDER
